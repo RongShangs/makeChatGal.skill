@@ -14,7 +14,7 @@ def main():
         if path.suffix in {'.py','.md','.json','.yaml'}:path.read_text(encoding='utf-8')
     assert (SOURCE/'SKILL.md') in paths and (SOURCE/'LICENSE') in paths
     with zipfile.ZipFile(out,'w',zipfile.ZIP_DEFLATED,compresslevel=6) as archive:
-        for path in sorted(paths):
+        for path in sorted(paths,key=lambda item:item.relative_to(SOURCE).as_posix()):
             name='make-chatgal/'+path.relative_to(SOURCE).as_posix()
             info=zipfile.ZipInfo(name,(1980,1,1,0,0,0));info.compress_type=zipfile.ZIP_DEFLATED;info.external_attr=0o644<<16
             data=path.read_bytes()
