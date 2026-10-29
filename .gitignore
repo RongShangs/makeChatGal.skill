@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+.venv/
+dist/
+.qa/
+_upstream/
+upstream/
+compatibility-report.json
+.env
+.env.*

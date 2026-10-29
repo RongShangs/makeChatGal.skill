@@ -1,0 +1,42 @@
+name: Skill checks
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install -r requirements-dev.txt
+      - name: Read pinned upstream revision
+        id: upstream
+        run: python -c "import json,os; p=json.load(open('skills/make-chatgal/compatibility.lock.json')); open(os.environ['GITHUB_OUTPUT'],'a').write('ref='+p['upstreamCommit']+'\n')"
+      - uses: actions/checkout@v4
+        with:
+          repository: RongShangs/ChatGal
+          ref: ${{ steps.upstream.outputs.ref }}
+          path: _upstream
+      - name: Unit and contract checks
+        env:
+          CHATGAL_PROJECT: ${{ github.workspace }}/_upstream
+        run: python -m unittest discover -s tests -v
+      - uses: dart-lang/setup-dart@v1
+        with:
+          sdk: '3.13.2'
+      - run: dart pub get
+        working-directory: _upstream/packages/gal_protocol
+      - run: dart pub get
+        working-directory: _upstream/packages/gal_ai
+      - name: Official package validation and runtime paths
+        run: python tests/runtime_integration.py --project _upstream
+      - run: python tools/package_skill.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: make-chatgal-skill
+          path: dist/*.zip

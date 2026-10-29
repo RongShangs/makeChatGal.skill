@@ -1,0 +1,18 @@
+{
+  "format": "ChatGal flat v2",
+  "features": {
+    "characters_and_portrait_matrix": {"status":"supported","scope":"package","evidence":["packages/gal_protocol/lib/src/models/character.dart"]},
+    "multi_character_audience": {"status":"supported","scope":"package+runtime","evidence":["packages/gal_protocol/lib/src/scene_v2.dart","packages/gal_protocol/lib/src/memory_runtime.dart"]},
+    "scene_prompts_background_narration_atmosphere": {"status":"supported","scope":"package","evidence":["packages/gal_protocol/lib/src/scene_v2.dart","apps/chatgal/lib/features/session/chat_page.dart"]},
+    "registered_variables_entry_effects_settlement": {"status":"supported","scope":"package","evidence":["packages/gal_protocol/lib/src/variable_registry.dart","packages/gal_ai/lib/src/transition_coordinator.dart"]},
+    "infix_conditions_random_exits": {"status":"supported","scope":"package","evidence":["packages/gal_protocol/lib/src/require_expr.dart","packages/gal_ai/lib/src/target_router.dart"]},
+    "event_slides_choices_gallery": {"status":"supported","scope":"package+runtime","evidence":["packages/gal_protocol/lib/src/event_def.dart","packages/gal_ai/lib/src/event_coordinator.dart"]},
+    "provider_reply_stream_display_fonts": {"status":"app-setting","scope":"application","evidence":["apps/chatgal/lib/features/settings/api_settings.dart"]},
+    "five_layer_memory": {"status":"app-setting","scope":"application","evidence":["packages/gal_protocol/lib/src/character_memory.dart"]},
+    "cloud_tts": {"status":"app-setting","scope":"application","evidence":["apps/chatgal/lib/features/tts/tts_settings.dart","apps/chatgal/lib/features/tts/tts_service.dart"]},
+    "author_supplied_animation": {"status":"not-supported-at-baseline","scope":"future-review","evidence":["packages/gal_protocol/lib/src/models/character.dart","packages/gal_protocol/lib/src/scene_v2.dart"]},
+    "package_bgm_sfx": {"status":"not-supported-at-baseline","scope":"future-review","evidence":["packages/gal_protocol/lib/src/scene_v2.dart","packages/gal_protocol/lib/src/event_def.dart"]}
+  },
+  "packageMediaExtensions": [".png"],
+  "settingsAreNotManifestFields": true
+}

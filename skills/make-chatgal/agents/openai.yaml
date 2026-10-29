@@ -1,0 +1,4 @@
+interface:
+  display_name: "ChatGal 内容包创作"
+  short_description: "制作并校验 ChatGal 内容包，按生图能力生成素材或提示词，关联主项目版本"
+  default_prompt: "使用 $make-chatgal 为我制作一个可导入的 ChatGal 内容包，并按当前工具能力处理图片。"

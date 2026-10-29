@@ -1,0 +1,454 @@
+{
+  "lockVersion": 1,
+  "skillVersion": "0.1.0",
+  "upstreamRepository": "https://github.com/RongShangs/ChatGal",
+  "upstreamCommit": "9c833c87303fc9fc5ede9dfcf989f5d5d4119663",
+  "trackedWorktreeDirty": false,
+  "appVersion": "0.1.6+7",
+  "contentFormat": "flat-v2",
+  "builtinPackageVersions": {
+    "defaultPackageVersion": "264",
+    "dailyPackageVersion": "9"
+  },
+  "installLimits": {
+    "maxZipBytes": 268435456,
+    "maxExtractedBytes": 1073741824,
+    "maxEntries": 5000,
+    "maxJsonBytes": 8388608
+  },
+  "watchPatterns": [
+    "apps/chatgal/pubspec.yaml",
+    "docs/AUTHOR_GUIDE.md",
+    "docs/BOUNDARY.md",
+    "tools/rebuild_default_v2_demo.py",
+    "tools/pack_default_v2.py",
+    "schemas/v2/*.json",
+    "packages/gal_protocol/lib/**/*.dart",
+    "packages/gal_protocol/tool/validate_pack.dart",
+    "packages/gal_ai/lib/**/*.dart",
+    "packages/gal_storage/lib/src/install*.dart",
+    "packages/gal_storage/lib/src/package_installer.dart",
+    "apps/chatgal/lib/app/app_services.dart",
+    "apps/chatgal/lib/features/settings/*.dart",
+    "apps/chatgal/lib/features/tts/*.dart",
+    "apps/chatgal/lib/features/session/*.dart",
+    "apps/chatgal/lib/features/studio/*.dart"
+  ],
+  "sourceHashes": {
+    "apps/chatgal/lib/app/app_services.dart": "83bd64c9ae1c4fe687be60c59e7c9832487fb56d84e089cc96392a4dc981f067",
+    "apps/chatgal/lib/features/session/action_span.dart": "dd4c854e07dd4c1277399ee3d99751cc1409dac50e1c7e9eab0e68c2211fca5f",
+    "apps/chatgal/lib/features/session/chat_layout.dart": "f4a265bcd508d23c3d09ce998b8b278e2eb965095484ba06da62e53dcb948fd3",
+    "apps/chatgal/lib/features/session/chat_page.dart": "f446a535d80a5920273f2d4e5e671cbba3349f0d535d1dc9b4a020b654ec7c92",
+    "apps/chatgal/lib/features/session/leave_status_card.dart": "8c1737daf82fc7669370d7e006b52bea7759173e9ce1a23347aaf892e1d89436",
+    "apps/chatgal/lib/features/session/memory_page.dart": "5c8ab570d6df36bade948867dab5354769b251b353f1d1b59a3f5bcfd04a2487",
+    "apps/chatgal/lib/features/session/period_transition.dart": "bf2c96c5f43fe4c41790ca94bf1a4b3abba33c1c7e78d09e511c7952a187d2d0",
+    "apps/chatgal/lib/features/session/portrait_bg_remover.dart": "e587204ed98f86b4f97671ec7ac8184fe511436fb801276d66bf775d4625b447",
+    "apps/chatgal/lib/features/session/save_position_check.dart": "36075ca543c43c385eeb4517a96e5dd21a3ec8808472d0690f87970d6f52624f",
+    "apps/chatgal/lib/features/settings/api_settings.dart": "473ff36355ce0847daf3371434a46e435fec052de8593f1b9a888073393a86a2",
+    "apps/chatgal/lib/features/settings/chat_font.dart": "4039e9233692126122cef157ead7bdcf6e0ff4a13c37a8d72dcc4a1a09cfc587",
+    "apps/chatgal/lib/features/settings/display_settings_page.dart": "f6a8a7216f030933f15ab707b81ae682888cdff2fd4249ff045247801510ffa7",
+    "apps/chatgal/lib/features/settings/feedback_page.dart": "e6baa47f8f9ae6211e21e678f0648550b1459368ccf3b7afb57056d38ec2fad5",
+    "apps/chatgal/lib/features/settings/font_settings_page.dart": "1dea80d82d85ded14d95b3a4810a630f949540bff81f8d62036196369700ac53",
+    "apps/chatgal/lib/features/settings/local_model_page.dart": "9138e8a1fb1936fa8192be318c9ac507ccea69d3f3735ca8a9e7e40c5bcf0b4b",
+    "apps/chatgal/lib/features/settings/memory_settings_page.dart": "49461e4d21f807d53e6447faafe97a10f4f2c8fcb3fbea0d64dbec0292ac1c9f",
+    "apps/chatgal/lib/features/settings/model_providers_page.dart": "36ecf1f2a51d23d7bcee2f51e45752657f5379c00a3fb5222615ee6066530ef9",
+    "apps/chatgal/lib/features/settings/privacy_fallback_page.dart": "3efe2b41ea92b839cb703c347e76c628c835237a44cc55b25086a20ae4b57eeb",
+    "apps/chatgal/lib/features/settings/privacy_page.dart": "dfef904f4967e32cf351ddc905c7a27e0dd541786dbd4c9c76a892a7b93f9da4",
+    "apps/chatgal/lib/features/settings/provider_editor_page.dart": "66269fc7bfb67b0d8af8cb71fcbb19d7ac68bd40ebd96d908c479541d1a4004e",
+    "apps/chatgal/lib/features/settings/settings_page.dart": "2ab526b7bae5d30821a03b14b707b1f6ebccbeec0f1f4d0112eab91535b0741c",
+    "apps/chatgal/lib/features/settings/settings_widgets.dart": "2c1cf14400bde359653711b3dfd9ac2e03f95821bebeead955132aa88f951c5b",
+    "apps/chatgal/lib/features/settings/voice_settings_page.dart": "2d235bf8bf707a49abdd18030cf113f0c93c7fa905bb6669b5562af0c508af60",
+    "apps/chatgal/lib/features/studio/character_editor.dart": "8b6abf92bf8ce4dba21877f83b9b920db26925cca323735eca83abb60c7a688c",
+    "apps/chatgal/lib/features/studio/event_editor.dart": "07b79b5526da87121125a3d1fe3cbbb87557652f6fac7394c0420c191f9016ef",
+    "apps/chatgal/lib/features/studio/hints.dart": "8c2e71ebb5447de5bdbaea95e104c2741111919c71ec9e2a620da20616090a5d",
+    "apps/chatgal/lib/features/studio/manifest_editor.dart": "ab38100c8a806ac1e5aa4a60f8569861e187b4d24b6f032c89ca7d3e40647431",
+    "apps/chatgal/lib/features/studio/require_editor.dart": "b0279dadd2205f52974e8e2dc4f386fe14d91130b04e1ce75c45dc6543303330",
+    "apps/chatgal/lib/features/studio/scene_editor.dart": "563bf3c623094ebe6c550d0c4cd2a91a5d804a648b8400d4030e177ae5e00a2f",
+    "apps/chatgal/lib/features/studio/studio_editor_page.dart": "8cea9d70acb2b7d2a3704d2789098b8a28a335763e60f52b56c2f507d9d30195",
+    "apps/chatgal/lib/features/studio/studio_page.dart": "84bfaf46e8e07c8d0543c755efbd4c422a9071fb5fd26d42babc7f84746ae56d",
+    "apps/chatgal/lib/features/tts/tts_service.dart": "7175d4240c8a2ececcd1087535ee669937b5dbd77a2f0dbaa45a41a6dbde0a72",
+    "apps/chatgal/lib/features/tts/tts_settings.dart": "7347a3c5c3d3187683f27bb2c4a0dd189666fd57c4a02bd4d6b3d34b207b1405",
+    "apps/chatgal/pubspec.yaml": "2e8b8829b25f01bc699751639871a14f69b6dbfdd5bb979a98ca2c625dd740c1",
+    "docs/AUTHOR_GUIDE.md": "ea124de971a893c21864417b965b6440e2100dfffcbf0a60866cf2000f4c5d96",
+    "docs/BOUNDARY.md": "a688f51a16da37111dd794e77766d1e378b622450b50e878da505d22f118e939",
+    "packages/gal_ai/lib/gal_ai.dart": "c771147c255f8978e1b13b0baba3f744f2b772ed1e5c607b5c889d4fd6d8d160",
+    "packages/gal_ai/lib/src/cancel_token.dart": "dd40faf69fe6d4cb7bc1617d4bacadbdbb1c42a27c210745ca68ad27136b9d35",
+    "packages/gal_ai/lib/src/dialogue_provider.dart": "4fc64f52c32c320b6efbd22325bcdc56d09b22800682f0fc35f1f48a868a1bcc",
+    "packages/gal_ai/lib/src/event_coordinator.dart": "fd05944d60bdcf3d8b70d7302839b1ea1a20b76b1a3ebc914ebeb95fa1e52530",
+    "packages/gal_ai/lib/src/look_agent.dart": "8796b55bf926c51758852ebe336080d6fbe98fd477e5b8d9de58a088e6524ce0",
+    "packages/gal_ai/lib/src/memory_context.dart": "0fa5afed1ccc26a7519e7299b030edff58ceeec2f8dd660c37e618496dcb3b6f",
+    "packages/gal_ai/lib/src/memory_provider.dart": "ec93b6b81073b7f4567a82683480f6e92bdfb2d05295773e1086c52436730def",
+    "packages/gal_ai/lib/src/memory_runtime.dart": "fc418718324de0a21da0ee07a46ac81f1e1fd69f3a1ea660613366e6317343ef",
+    "packages/gal_ai/lib/src/mock_provider.dart": "1dcd046f9a486711e263db180415c03dab88186783ad417723fb2973854260ec",
+    "packages/gal_ai/lib/src/openai_compatible_provider.dart": "2fc6d5e5f306dbdfe9d8fca7af16c1645c7fdaa15bf2dc497d8ef1060f6b3fdd",
+    "packages/gal_ai/lib/src/parse_ai_response.dart": "f5eaafe58e3308eaf0c0e990d421f58dbd72a8c3f1835e18a8704524dac9c14f",
+    "packages/gal_ai/lib/src/provider_config.dart": "d4b37bcc54435e2cf40a759cc372f851831b839399dfdb470b61dc0d6bf03d60",
+    "packages/gal_ai/lib/src/provider_result.dart": "3db907b744b100916b5fbfc20861c6e7a45d7eccc0e2b37aa36cafcf3962001d",
+    "packages/gal_ai/lib/src/settlement_evidence.dart": "800a0e5a034755d0f519fc64035a8ccff59a3a5bd000016e2d308186f25f2aa9",
+    "packages/gal_ai/lib/src/settlement_provider_ai.dart": "52e9bff7cf43f23066e58e116435d6008c2fec5f9c1b4342d0352fd0607e936e",
+    "packages/gal_ai/lib/src/settlement_provider_mock.dart": "9110b14b520db57244c6156aaef64240c6a40157e059b0c5a9faec2c764779e2",
+    "packages/gal_ai/lib/src/target_router.dart": "b4a7e0ec073556130575f0b263aeca6699efa735fd0b5763c3845495997c4200",
+    "packages/gal_ai/lib/src/transition_coordinator.dart": "c113e25815d996844ed92da10d9de3ea9b65fb9cf3afe5282a76d22fea0c5cb8",
+    "packages/gal_ai/lib/src/turn_coordinator.dart": "0ea69720d18dcfb388507b3ab96ab9962eb9e451b88f8e9face58cab4978857f",
+    "packages/gal_protocol/lib/gal_protocol.dart": "bb2f8a7ac68846449102de7a0ac4daeb576fff363d624793ad74ed7e410086bd",
+    "packages/gal_protocol/lib/src/ai_response.dart": "1defc2d6c8cbf06a3f35ea0afcaf5ca86919b9cefad7fb8f8f4ed223c69b1a53",
+    "packages/gal_protocol/lib/src/character_memory.dart": "cf4ccfa6eae4b60bc176584071e5fe250ffaaba053e8f1f8212f12c454d5dd63",
+    "packages/gal_protocol/lib/src/error_code.dart": "2b38a6df9f7a804cc1d09fe0304cd6ed282b60842f1131917a40730a1fcaacc4",
+    "packages/gal_protocol/lib/src/event_def.dart": "01fbf4025173693d5ef1d96dd5aff77c49bc1dc5cdd0873e9fffc527a889ef15",
+    "packages/gal_protocol/lib/src/jsonc.dart": "29f12ae931fb929e09c612d6062421c386da10ff54cdae7dddb25afe82a8a6e9",
+    "packages/gal_protocol/lib/src/memory_runtime.dart": "a0402c247ce7f41e99d075c3c2bd038426d18b46606c96373d318f8d25a47ec2",
+    "packages/gal_protocol/lib/src/models/character.dart": "0b91c57e8ced37902c663369424029a18b36b27487aef7df7c26ded083f802bb",
+    "packages/gal_protocol/lib/src/models/manifest.dart": "7986463f6a8c69b83590634772ecdc92695e0272089f206c6da9f8b01744e338",
+    "packages/gal_protocol/lib/src/models/variable_def.dart": "54830aa910270e3b4bff0add07a571f2ae9187445563b19b3ecf63840761fc80",
+    "packages/gal_protocol/lib/src/package_content.dart": "0c4c659e9f5b4e8c4f387e2d773d84d08b0c00521fc51f7c83010d34c6c8fafb",
+    "packages/gal_protocol/lib/src/package_loader.dart": "e82d357e44045ae75ba9492e9f3f937ae6d3649cb29c62b0f499fcd4b6df07b9",
+    "packages/gal_protocol/lib/src/package_ref.dart": "597962c8214c15efb68251f77dc9c6c04b0bb2d0a69bb59f699eb9fe7a4cd8dc",
+    "packages/gal_protocol/lib/src/package_validator.dart": "ec5c2a47f4ccbe99e60582aa83b2453d9303d887957800488760c79f0271f365",
+    "packages/gal_protocol/lib/src/require_expr.dart": "a9a8c9eb3e40c356e7ad4d302720bb14c5058684fc5c8c537394a06c3212f742",
+    "packages/gal_protocol/lib/src/rng.dart": "e8dc0d597a68df01224f157f17e2e133b3623a3d3cbc2a3464a38ba6bce372a9",
+    "packages/gal_protocol/lib/src/runtime_cursor.dart": "8ed0f336bc1bba339884d7d2f35f76b645761a32949401e8a2a9a96785b8b78e",
+    "packages/gal_protocol/lib/src/scene_v2.dart": "3f87e1cbda9a24e4c82bacba9358c9030be91bd0ca594613cf6779c9c5974757",
+    "packages/gal_protocol/lib/src/settlement.dart": "1503927d5dbfd22b58704e305f5e80ec0f46a29bc0013b14705de65b4699c4ca",
+    "packages/gal_protocol/lib/src/validation_error.dart": "791e0dc599e1d3b88462091344362ae97ef5341e0c9efadca33ab2cd7e61daa9",
+    "packages/gal_protocol/lib/src/variable_apply.dart": "7eac516f3b8bd2b47d0483c7d49dd2d0a95f7640c70c7698c3fd37d94f585206",
+    "packages/gal_protocol/lib/src/variable_registry.dart": "88b5274f60ab31a88e4865dfacf502cf6ada9db90919ea7b2556cba48f473205",
+    "packages/gal_protocol/lib/src/world_init.dart": "00cddd150b8978ccab2680cfc8d26d25bb9634e2e536b1f087d0a36e0ee93625",
+    "packages/gal_protocol/lib/src/world_snapshot.dart": "399b025e1dbb7cc504c66d2bc966d2d3f90d0319bcbd010dd3fd922ef1a53af5",
+    "packages/gal_protocol/tool/validate_pack.dart": "d655f03ab21c8fb9b96703a7efc0003613c6d5333415fd5e3fe8b2794f5eb2a0",
+    "packages/gal_storage/lib/src/install_limits.dart": "e5672f9f2639826e2ca4e157ea01b8df5ebc085e30703643de13a41f56e889cd",
+    "packages/gal_storage/lib/src/install_log.dart": "a701ffabc1fd57d1c9b8731135469b5614a5eaf6396474a2298fc96c02baacd5",
+    "packages/gal_storage/lib/src/install_result.dart": "cb560ba0860c3468be4dc3cbcb0d2a85cc730117c9bc98fbb966c15ce728596f",
+    "packages/gal_storage/lib/src/package_installer.dart": "cc34880de44f3bf94d1ca3906af0e7a0935537618a99347b9536e3cab7a2c0dc",
+    "schemas/v2/condition.json": "be37a50f81045f0f160bffb48d3d6945754e8adc30d074c0d7e22063abc26aff",
+    "schemas/v2/event.json": "ae1bf6af4ecce74f7ef539029739a61e9455fe7702a2a43edcbdcba512541852",
+    "schemas/v2/manifest.json": "531e6614aa34c23e3e882758bfd482f9e867cb93c01ee8915790971429b60bb1",
+    "schemas/v2/memory-entry.json": "9e1d62713c0c4560e9a91f8249ab02e05355ec89f8a025ede143f2fe51035749",
+    "schemas/v2/processed-range.json": "7f08b79ac062cc3e5828e8d90876a6de55ff2c4ca9bd90ffd68f30950b596a15",
+    "schemas/v2/save-slot.json": "27ce89f9d43c95946d48c7ba198fdb4fcbe38b4f7786b07319b0c24cb3a6d307",
+    "schemas/v2/scene.json": "c4d5da156465a9c01cb88de2b7c2a85386980509d038fbb8abbfe4b61eac019e",
+    "tools/pack_default_v2.py": "ffc7b61a044af5b2e13ce0c82dddb98696187fd043cb1bc33ccea13c697371f6",
+    "tools/rebuild_default_v2_demo.py": "c852bbb23d4e58d3ab0ba031945ab9cffa01750006025187e2e397174ea1c967"
+  },
+  "contractFingerprint": "e615e8244040a3aae7945f4b62ba385cea9d4c21864627ec1bbfa401c7ec0aee",
+  "schemaShapes": {
+    "condition.json": {},
+    "event.json": {
+      "/": [
+        "choice",
+        "slides",
+        "target"
+      ],
+      "/properties/slides/items": [
+        "image",
+        "text"
+      ],
+      "/properties/choice": [
+        "options",
+        "title"
+      ],
+      "/properties/choice/properties/options/items": [
+        "kind",
+        "text",
+        "to"
+      ]
+    },
+    "manifest.json": {
+      "/": [
+        "author",
+        "description",
+        "name",
+        "packageId",
+        "variables",
+        "version"
+      ],
+      "/$defs/variable": [
+        "default",
+        "description",
+        "enum",
+        "id",
+        "label",
+        "max",
+        "min",
+        "type"
+      ]
+    },
+    "memory-entry.json": {
+      "/": [
+        "aggregatedInto",
+        "createdAt",
+        "l5ReviewedBy",
+        "layer",
+        "memId",
+        "owner",
+        "replaces",
+        "source",
+        "sourceMemIds",
+        "sourceScenes",
+        "status",
+        "text"
+      ],
+      "/properties/source": [
+        "dayRange",
+        "kind",
+        "messageIdRange",
+        "sourceKnown",
+        "storyId",
+        "turnIds",
+        "visitId"
+      ],
+      "/properties/sourceScenes/items": [
+        "storyId",
+        "visitId"
+      ]
+    },
+    "processed-range.json": {
+      "/": [
+        "charId",
+        "fromMsgId",
+        "producedMemIds",
+        "storyId",
+        "toMsgId",
+        "turnIds",
+        "visitId"
+      ]
+    },
+    "save-slot.json": {
+      "/": [
+        "eventLedger",
+        "identity",
+        "memory",
+        "messages",
+        "package",
+        "progress",
+        "saveSchemaVersion",
+        "world"
+      ],
+      "/properties/identity": [
+        "createdAt",
+        "label",
+        "revision",
+        "saveId",
+        "sessionId",
+        "updatedAt"
+      ],
+      "/properties/package": [
+        "contentHash",
+        "coverAssetId",
+        "displayName",
+        "packageId",
+        "version"
+      ],
+      "/properties/progress": [
+        "appliedSettlementIds",
+        "committedTransitions",
+        "cursor",
+        "pending",
+        "storyId"
+      ],
+      "/properties/progress/properties/cursor": [
+        "eventId",
+        "eventVisitId",
+        "mode",
+        "slideIndex",
+        "storyId",
+        "visitId"
+      ],
+      "/properties/progress/properties/pending/oneOf/1": [
+        "baseRevision",
+        "cache",
+        "id",
+        "kind",
+        "phase"
+      ],
+      "/properties/world": [
+        "characters",
+        "eventHistory",
+        "presentation",
+        "rngState",
+        "story",
+        "variables"
+      ],
+      "/properties/messages/items": [
+        "audience",
+        "kind",
+        "segments",
+        "speaker",
+        "text",
+        "turnId"
+      ],
+      "/properties/memory": [
+        "trees",
+        "windows"
+      ],
+      "/properties/memory/properties/trees/additionalProperties": [
+        "events",
+        "layers",
+        "processed"
+      ]
+    },
+    "scene.json": {
+      "/": [
+        "atmosphere",
+        "background",
+        "characters",
+        "displayName",
+        "fixedEffects",
+        "narration",
+        "settlement",
+        "target"
+      ],
+      "/$defs/settlementVar": [
+        "maxAbsDelta",
+        "onNoEvidence",
+        "prompt",
+        "var"
+      ],
+      "/$defs/actor": [
+        "charId",
+        "emotion",
+        "scenePrompt",
+        "state"
+      ],
+      "/$defs/change": [
+        "id",
+        "value"
+      ],
+      "/$defs/targetBlock": [
+        "kind",
+        "require"
+      ],
+      "/$defs/exitTarget": [
+        "kind",
+        "to"
+      ]
+    }
+  },
+  "topLevelFields": {
+    "manifest": [
+      "author",
+      "description",
+      "name",
+      "packageId",
+      "variables",
+      "version"
+    ],
+    "scene": [
+      "atmosphere",
+      "background",
+      "characters",
+      "displayName",
+      "fixedEffects",
+      "narration",
+      "settlement",
+      "target"
+    ],
+    "event": [
+      "choice",
+      "slides",
+      "target"
+    ],
+    "character": [
+      "defaultEmotion",
+      "defaultState",
+      "emotions",
+      "id",
+      "prompt",
+      "states"
+    ]
+  },
+  "capabilityCatalogSha256": "96dd1a6ac8616915fe0ae43de61d46ee33ddf8c7c0359803fe67b14ab104c562",
+  "reviewedCapabilities": {
+    "format": "ChatGal flat v2",
+    "features": {
+      "characters_and_portrait_matrix": {
+        "status": "supported",
+        "scope": "package",
+        "evidence": [
+          "packages/gal_protocol/lib/src/models/character.dart"
+        ]
+      },
+      "multi_character_audience": {
+        "status": "supported",
+        "scope": "package+runtime",
+        "evidence": [
+          "packages/gal_protocol/lib/src/scene_v2.dart",
+          "packages/gal_protocol/lib/src/memory_runtime.dart"
+        ]
+      },
+      "scene_prompts_background_narration_atmosphere": {
+        "status": "supported",
+        "scope": "package",
+        "evidence": [
+          "packages/gal_protocol/lib/src/scene_v2.dart",
+          "apps/chatgal/lib/features/session/chat_page.dart"
+        ]
+      },
+      "registered_variables_entry_effects_settlement": {
+        "status": "supported",
+        "scope": "package",
+        "evidence": [
+          "packages/gal_protocol/lib/src/variable_registry.dart",
+          "packages/gal_ai/lib/src/transition_coordinator.dart"
+        ]
+      },
+      "infix_conditions_random_exits": {
+        "status": "supported",
+        "scope": "package",
+        "evidence": [
+          "packages/gal_protocol/lib/src/require_expr.dart",
+          "packages/gal_ai/lib/src/target_router.dart"
+        ]
+      },
+      "event_slides_choices_gallery": {
+        "status": "supported",
+        "scope": "package+runtime",
+        "evidence": [
+          "packages/gal_protocol/lib/src/event_def.dart",
+          "packages/gal_ai/lib/src/event_coordinator.dart"
+        ]
+      },
+      "provider_reply_stream_display_fonts": {
+        "status": "app-setting",
+        "scope": "application",
+        "evidence": [
+          "apps/chatgal/lib/features/settings/api_settings.dart"
+        ]
+      },
+      "five_layer_memory": {
+        "status": "app-setting",
+        "scope": "application",
+        "evidence": [
+          "packages/gal_protocol/lib/src/character_memory.dart"
+        ]
+      },
+      "cloud_tts": {
+        "status": "app-setting",
+        "scope": "application",
+        "evidence": [
+          "apps/chatgal/lib/features/tts/tts_settings.dart",
+          "apps/chatgal/lib/features/tts/tts_service.dart"
+        ]
+      },
+      "author_supplied_animation": {
+        "status": "not-supported-at-baseline",
+        "scope": "future-review",
+        "evidence": [
+          "packages/gal_protocol/lib/src/models/character.dart",
+          "packages/gal_protocol/lib/src/scene_v2.dart"
+        ]
+      },
+      "package_bgm_sfx": {
+        "status": "not-supported-at-baseline",
+        "scope": "future-review",
+        "evidence": [
+          "packages/gal_protocol/lib/src/scene_v2.dart",
+          "packages/gal_protocol/lib/src/event_def.dart"
+        ]
+      }
+    },
+    "packageMediaExtensions": [
+      ".png"
+    ],
+    "settingsAreNotManifestFields": true
+  }
+}
