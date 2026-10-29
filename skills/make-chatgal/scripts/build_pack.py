@@ -143,7 +143,7 @@ def build(source, output, project=None, lock_path=None, draft=False, previous=No
         archive_path=Path(temp)/'package.zip'
         with zipfile.ZipFile(archive_path,'w',zipfile.ZIP_DEFLATED,compresslevel=6) as archive:
             for name,data in sorted(files.items()):
-                info=zipfile.ZipInfo(name,(1980,1,1,0,0,0));info.compress_type=zipfile.ZIP_DEFLATED;info.external_attr=0o644<<16
+                info=zipfile.ZipInfo(name,(1980,1,1,0,0,0));info.compress_type=zipfile.ZIP_DEFLATED;info.create_system=3;info.external_attr=0o644<<16
                 archive.writestr(info,data)
         if archive_path.stat().st_size > limits['maxZipBytes']: raise ValueError('Compressed package exceeds install limit')
         with zipfile.ZipFile(archive_path) as archive:

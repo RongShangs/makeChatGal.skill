@@ -8,6 +8,7 @@ import struct
 import sys
 import tempfile
 import unittest
+import zipfile
 import zlib
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -60,6 +61,9 @@ class ToolTests(unittest.TestCase):
         second=build(work/'pack',self.root/'b.draft.zip',draft=True)
         self.assertEqual(first['sha256'],second['sha256']);self.assertFalse(first['runtimeValidation']['validated'])
         self.assertEqual(first['mediaVerification'],{'status':'not-checked','checkedImages':0,'method':None})
+        with zipfile.ZipFile(self.root/'a.draft.zip') as archive:
+            self.assertEqual(archive.namelist(),sorted(archive.namelist()))
+            self.assertTrue(all(item.create_system==3 for item in archive.infolist()))
         with self.assertRaisesRegex(ValueError,'draft.zip'):
             build(work/'pack',self.root/'misleading.chatgal',draft=True)
     def test_unknown_future_feature_is_not_silently_accepted(self):
